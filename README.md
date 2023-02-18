@@ -1,5 +1,5 @@
 # Salesken_quiz
-#About : QuizOmania is a frontened quiz app which offers user a pplatform to take javascript quiz and also offeres some features.
+#About : QuizOmania is a frontened quiz app which offers user a platform to take javascript quiz and also offeres some features.
 
 #Tech Stack used
 -Javascript
@@ -55,7 +55,7 @@ REPORT PAGE
 <img width="1378" alt="Screenshot 2023-02-19 at 3 11 03 AM" src="https://user-images.githubusercontent.com/100379404/219900717-60910974-1f5f-4617-bba3-44aed697d7b9.png">
 
 
-Thanky ou
+Thank you
 
 
 
