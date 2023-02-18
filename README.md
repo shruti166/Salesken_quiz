@@ -39,10 +39,9 @@ LOGIN PAGE
  -User cannot jump to next question without answering existing ques.
  -User can skip a question.
  
- ![image](https://user-images.githubusercontent.com/100379404/219900475-96d7abde-fa5a-48e7-8065-1203d9dac2fb.png)
+ <img width="1440" alt="Screenshot 2023-02-19 at 3 03 28 AM" src="https://user-images.githubusercontent.com/100379404/219900866-1a455e4b-7013-4b15-b447-ae2f6db459d1.png">
  
- ![image](https://user-images.githubusercontent.com/100379404/219900528-7bc29a5e-5563-4897-9d20-73f23f3ddc62.png)
-
+ <img width="1440" alt="Screenshot 2023-02-19 at 3 03 28 AM" src="https://user-images.githubusercontent.com/100379404/219900879-b1f53ce6-2154-4792-90b2-e395a71166f5.png">
 REPORT PAGE
 -User will be redirected to report page after completion of the quiz
 
