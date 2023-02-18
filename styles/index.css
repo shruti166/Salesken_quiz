@@ -1,0 +1,31 @@
+body {
+  background: url("https://media.istockphoto.com/id/1364994903/video/animation-of-question-marks-on-green-background.jpg?s=640x640&k=20&c=Fdr74s-FYQeLf8yYOFHpbK9f0TGp9E6B8nNiPawQtVc=");
+  background-size: cover;
+}
+/* Home Page */
+
+#home_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* header styles */
+
+#header > h1 {
+  font-size: 50px;
+  color: antiquewhite;
+}
+
+#header > span {
+  color: rgb(36, 37, 38);
+}
+
+/* Login Signup options */
+
+#options_div {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
