@@ -1,4 +1,4 @@
-let user = JSON.parse(localStorage.getItem("user"));
+let user = JSON.parse(localStorage.getItem("user")) || [];
 
 //Login functionality
 
@@ -21,6 +21,6 @@ const logIn = () => {
       location = "quiz.html";
     } else {
       alert("Wrong Credentials");
-    }
+    } 
   }
 };
