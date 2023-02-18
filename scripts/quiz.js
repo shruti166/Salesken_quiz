@@ -206,6 +206,11 @@ const handleNext = () => {
   localStorage.setItem("report", JSON.stringify(userResult));
   localStorage.setItem("score", JSON.stringify(score));
   i++;
+  if (i == 9) {
+    document.getElementById("next-btn").disabled = true;
+    alert("Voilla, Quiz completed!! Fetching your report");
+    location = "report.html"
+  }
   getQues();
 };
 
