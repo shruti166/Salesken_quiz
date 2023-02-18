@@ -21,7 +21,7 @@ const displayReport = () => {
         document.getElementById("body").append(row);
     })
    
-    document.getElementById('scoreBox').innerHTML = "Your score is" +totalScore + "out of 10";
+    document.getElementById('scoreBox').innerHTML = "YOUR SCORE IS" + " " +totalScore +" " +  "OUT OF 10";
     
 }
 displayReport()

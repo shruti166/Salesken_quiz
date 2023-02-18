@@ -38,3 +38,17 @@ tr:hover {
     background-color: rgb(199, 200, 204);
 }
 
+/* ScoreBox styles*/
+
+#scoreBox {
+    width: 30%;
+    margin: auto;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.507);
+    color: rgb(19, 19, 19);
+    border-radius: 10px;
+    padding: 20px;
+    opacity: 0.8;
+    font-weight:bolder;
+}
+
