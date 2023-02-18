@@ -80,3 +80,69 @@ const quesDataBase = [
         ans: "a"
     }
 ]
+let i = 0;
+const getQues = () => {
+   
+    let ques = quesDataBase[i];
+    console.log(ques);
+    let quesHeading = document.createElement("h1");
+    quesHeading.innerText = ques.question;
+    let row1 = document.createElement("row");
+    row1.setAttribute("id", "row1");
+    row1.style.display = "flex";
+
+    let row2 = document.createElement("row");
+    row2.setAttribute("id", "row2");
+    row2.style.display = "flex";
+
+    let row3 = document.createElement("row");
+    row3.setAttribute("id", "row3");
+    row3.style.display = "flex";
+
+    let row4 = document.createElement("row");
+    row4.setAttribute("id", "row4");
+    row4.style.display = "flex";
+    
+
+    let option1 = document.createElement('p');
+    let input1 = document.createElement('input');
+    input1.setAttribute("id", "input1");
+    input1.setAttribute("type", "radio");
+    input1.setAttribute("name", "radio");
+    option1.append(input1);
+    option1.innerText = ques.a;
+    row1.append(input1, option1);
+
+
+    let option2 = document.createElement('p');
+    let input2 = document.createElement('input');
+    input2.setAttribute("id", "input2");
+    input2.setAttribute("type", "radio");
+    input2.setAttribute("name", "radio");
+    option2.append(input2);
+    option2.innerText = ques.b;
+    row2.append(input2, option2);
+
+    let option3 = document.createElement('p');
+    let input3 = document.createElement('input');
+    input3.setAttribute("id", "input3");
+    input3.setAttribute("type", "radio");
+    input3.setAttribute("name", "radio");
+    option3.append(input3);
+    option3.innerText = ques.c;
+    row3.append(input3, option3);
+
+    let option4 = document.createElement('p');
+    let input4 = document.createElement('input');
+    input4.setAttribute("id", "input4");
+    input4.setAttribute("type", "radio");
+    input4.setAttribute("name", "radio");
+    option4.append(input4);
+    option4.innerText = ques.d;
+    row4.append(input4, option4)
+
+    document.getElementById("question-container").append(quesHeading, row1, row2, row3, row4);
+    
+}
+getQues();
+
