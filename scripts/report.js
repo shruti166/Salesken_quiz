@@ -1,6 +1,8 @@
 
 let userReport = JSON.parse(localStorage.getItem("report"));
 console.log(userReport);
+let totalScore = localStorage.getItem('score');
+console.log(totalScore);
 
 const displayReport = () => {
     userReport.map((elem) => {
@@ -18,6 +20,8 @@ const displayReport = () => {
         row.append(ques, correctAns, userAns);
         document.getElementById("body").append(row);
     })
+   
+    document.getElementById('scoreBox').innerHTML = "Your score is" +totalScore + "out of 10";
     
 }
 displayReport()

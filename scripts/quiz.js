@@ -201,8 +201,8 @@ const handleNext = () => {
         userAns.userAns = document.getElementById("option4").innerHTML;
     } 
     userResult.push(userAns);
-    localStorage.setItem('score', JSON.stringify(score));
     localStorage.setItem("report", JSON.stringify(userResult));
+    localStorage.setItem("score", JSON.stringify(score));
     i++;
     getQues();
 }
