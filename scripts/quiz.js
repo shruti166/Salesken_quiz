@@ -82,9 +82,11 @@ const quesDataBase = [
 ]
 let i = 0;
 const getQues = () => {
-   
+    document.getElementById("question-container").innerHTML = "";
     let ques = quesDataBase[i];
-    console.log(ques);
+    
+    
+
     let quesHeading = document.createElement("h1");
     quesHeading.innerText = ques.question;
     let row1 = document.createElement("row");
@@ -105,6 +107,7 @@ const getQues = () => {
     
 
     let option1 = document.createElement('p');
+    option1.setAttribute('id', "option1");
     let input1 = document.createElement('input');
     input1.setAttribute("id", "input1");
     input1.setAttribute("type", "radio");
@@ -115,6 +118,7 @@ const getQues = () => {
 
 
     let option2 = document.createElement('p');
+    option2.setAttribute('id', "option2");
     let input2 = document.createElement('input');
     input2.setAttribute("id", "input2");
     input2.setAttribute("type", "radio");
@@ -124,6 +128,7 @@ const getQues = () => {
     row2.append(input2, option2);
 
     let option3 = document.createElement('p');
+    option3.setAttribute('id', "option3");
     let input3 = document.createElement('input');
     input3.setAttribute("id", "input3");
     input3.setAttribute("type", "radio");
@@ -133,6 +138,7 @@ const getQues = () => {
     row3.append(input3, option3);
 
     let option4 = document.createElement('p');
+    option4.setAttribute('id', "option4");
     let input4 = document.createElement('input');
     input4.setAttribute("id", "input4");
     input4.setAttribute("type", "radio");
@@ -145,4 +151,65 @@ const getQues = () => {
     
 }
 getQues();
+
+let userResult = [];
+
+let score = {
+    score: 0
+}
+
+const handleNext = () => {
+    
+    let checked1 =  document.getElementById("input1").checked;
+    let checked2 =  document.getElementById("input2").checked;
+    let checked3 =  document.getElementById("input3").checked;
+    let checked4 =  document.getElementById("input4").checked;
+    
+    let ques = quesDataBase[i];
+    let ans = ques.ans;
+    
+
+    let userAns = {
+        question: ques.question,
+        userAns: "",
+        correctAns: ans,
+    }
+    
+    
+    if(!checked1 && !checked2 && !checked3 && !checked4) {
+        alert("Please select any option to continue");
+        return;
+    } else if(checked1 && ans === "a") {
+        userAns.userAns = document.getElementById("option1").innerHTML;
+        score.score = score.score + 1;
+    } else if(checked2 && ans === "b") {
+        userAns.userAns = document.getElementById("option2").innerHTML;
+        score.score = score.score + 1;
+    } else if(checked3 && ans === "c") {
+        userAns.userAns = document.getElementById("option3").innerHTML;
+        score.score = score.score + 1;
+    } else if(checked4 && ans === "d") {
+        userAns.userAns = document.getElementById("option4").innerHTML;
+        score.score = score.score + 1;
+    } else if(checked1 && ans !== "a") {
+        userAns.userAns = document.getElementById("option1").innerHTML;
+    } else if(checked2 && ans !== "b") {
+        userAns.userAns = document.getElementById("option2").innerHTML;
+    } else if(checked3 && ans !== "c") {
+        userAns.userAns = document.getElementById("option3").innerHTML;
+    } else if(checked4 && ans !== "d") {
+        userAns.userAns = document.getElementById("option4").innerHTML;
+    } 
+    userResult.push(userAns);
+    localStorage.setItem('score', JSON.stringify(score));
+    localStorage.setItem("report", JSON.stringify(userResult));
+    i++;
+    getQues();
+}
+
+const handleSkip = () => {
+    i++;
+    getQues();
+}
+
 
