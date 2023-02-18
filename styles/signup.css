@@ -1,0 +1,73 @@
+form {
+    border: 3px solid #f1f1f1;
+    width: 50%;
+    margin: auto;
+}
+/*Inputs*/
+ 
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/*Buttons*/
+body {
+    background: url("https://img.freepik.com/free-photo/flat-lay-photo-office-desk-with-laptop-copy-space-background_1150-45598.jpg?w=2000");
+    background-size: cover;
+  }
+
+button {
+    background-color: #6eb5dc;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+/* set a hover effect for the button*/
+ 
+button:hover {
+    opacity: 0.8;
+}
+
+/*Image*/
+ 
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+/*Image properties*/
+ 
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+/*Container styles*/
+ 
+.container {
+    padding: 16px;
+}
+
+     
+span.link {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Responsive */
+ 
+@media screen and (max-width: 300px) {
+    span.link {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
