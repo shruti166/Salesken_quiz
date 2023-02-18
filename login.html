@@ -12,7 +12,7 @@
 <body>
     <h2>Login Form</h2>
     <!--Login form-->
-    <form action="/action_page.php">
+    <form action="form">
         <div class="imgcontainer">
             <img src="https://media.istockphoto.com/id/1268465415/photo/quiz-time-concept-speech-bubble-with-pencil-on-yellow-background.jpg?s=612x612&w=0&k=20&c=ZowfYpCJeyknpWhnfyWqV1_If6aJmFUiSqqqEUBhvAg=" alt="Avatar"
                 class="avatar">
@@ -20,12 +20,12 @@
 
         <div class="container">
             <label><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
+            <input id = "uname" type="text" placeholder="Enter Username" name="uname" required>
 
             <label><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
+            <input id = "password" type="password" placeholder="Enter Password" name="psw" required>
 
-            <button type="submit">Login</button>
+            <button id = "submit" type="submit" onclick="logIn()">Login</button>
         </div>
 
         <div class="container" style="background-color:#f1f1f1">
@@ -33,6 +33,7 @@
         </div>
     </form>
     </div>
+    <script src="./scripts/login.js"></script>
 </body>
 
 </html>

@@ -2,6 +2,7 @@ form {
     border: 3px solid #f1f1f1;
     width: 50%;
     margin: auto;
+    
 }
 /*Inputs*/
  
@@ -46,12 +47,14 @@ button:hover {
 img.avatar {
     width: 40%;
     border-radius: 50%;
+    
 }
 
 /*Container styles*/
  
 .container {
     padding: 16px;
+    
 }
 
      
