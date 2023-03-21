@@ -1,6 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background: url("https://media.istockphoto.com/id/1364994903/video/animation-of-question-marks-on-green-background.jpg?s=640x640&k=20&c=Fdr74s-FYQeLf8yYOFHpbK9f0TGp9E6B8nNiPawQtVc=");
-  background-size: cover;
+  background: url("https://us.123rf.com/450wm/peshkov/peshkov1911/peshkov191100886/134138737-success-and-knowledge-concept-creative-business-sketch-on-chalkboard-blackboard-wall-background-3d.jpg?ver=6");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%; 
+  height: 100vh;
+  background-size: 100% 100%;
+  
+  
+  
   
 }
 /* Home Page */
@@ -9,7 +20,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #1c1c1b;
+ 
   border-radius: 20px;
 
 }
@@ -22,10 +33,10 @@ body {
 }
 
 #header > span {
-  background-color: #F0BE08;
+  
   padding: 15px 25px;
   border-radius: 5px;
-  color: rgb(7, 55, 151);
+  color: rgb(252, 252, 252);
   text-align: center;
   font-weight: bolder;
 }
@@ -33,7 +44,7 @@ body {
 /* Login Signup options */
 
 #options_div {
-  width: 20%;
+  width: 150px;
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
@@ -43,9 +54,12 @@ body {
 /* Login Signup Buttons */
 button {
   color: black;
-  border: 2px solid #4CB4AB;
-  padding: 15px 25px;
-  border-radius: 12px;
+  font-weight: bold;
+  background-color:bisque;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px;
 }
 
 button:hover {
@@ -57,4 +71,30 @@ button:hover {
 a {
   text-decoration: none;
   color: black;
+}
+
+@media screen and (max-width: 515px) {
+  #options_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+    height: 8vh
+   
+  }
+  #options_div > button {
+    width: 100%;
+
+  }
+  #home_page > #header {
+    text-align: center;
+  }
+  #home_page > #header > span {
+    font-size: 12px;
+    background-color: none;
+  }
+  #home_page > #header > h1 {
+    text-align: center;
+  }
+ 
 }
